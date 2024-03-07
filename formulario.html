@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de dados</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h3>Valide sue dados:</h3>
+    <form onsubmit="return validacao()">
+        Nome: <br>
+        <input type="text" name="nome" id="nome"> <br><br>
+        Endereço: <br>
+        <input type="text" name="endereco" id="endereco"> <br><br>
+        Cidade: <br>
+        <input type="text" name="cidade" id="cidade"> <br><br>
+        CPF: <br>
+        <input type="text" name="cpf" id="cpf"> <br><br>
+        Faixa Etária:
+        <select name="idade" id="idade">
+            <option value="-18">-18</option>
+            <option value="18">18</option>
+            <option value="+18">+18</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Validar">
+        <div id="avisos"></div>
+    </form>
+</body>
+</html>
